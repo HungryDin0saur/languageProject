@@ -1,0 +1,50 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>TabFooterBar.qml</file>
+        <file>PageForSwipeView_tests.qml</file>
+        <file>PageForSwipeView_nativeRussian.qml</file>
+        <file>BackButton.qml</file>
+        <file>StandartTextLableForApp.qml</file>
+        <file>PageForSwipeView_message.qml</file>
+        <file>PageForSwipeView_lessons.qml</file>
+        <file>PageForSwipeView_essays.qml</file>
+        <file>TESTTESTTEST.ui.qml</file>
+    </qresource>
+    <qresource prefix="/image_source">
+        <file>essays.png</file>
+        <file>lessons.png</file>
+        <file>messages.png</file>
+        <file>tests.png</file>
+        <file>backButton.png</file>
+        <file>native russian.png</file>
+    </qresource>
+    <qresource prefix="/native_russian">
+        <file>ClassRoomForNativeRussianItem.qml</file>
+        <file>5_Fifth_class_for_native_rus.qml</file>
+        <file>6_Sixth_class_for_native_rus.qml</file>
+        <file>7_Seventh_class_for_native_rus.qml</file>
+        <file>8_Eighth_class_for_native_rus.qml</file>
+        <file>9_Ninth_class_for_native_rus.qml</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>RobotoMono-Light(forLessons).ttf</file>
+        <file>Nunito-Light(forApp).ttf</file>
+    </qresource>
+    <qresource prefix="/tests">
+        <file>1_First_class_for_tests.qml</file>
+        <file>2_Second_class_for_tests.qml</file>
+        <file>3_Third_class_for_tests.qml</file>
+        <file>4_Fourth_class_for_tests.qml</file>
+        <file>5_Fifth_class_for_tests.qml</file>
+        <file>6_Sixth_class_for_tests.qml</file>
+        <file>7_Seventh_class_for_tests.qml</file>
+        <file>8_Eighth_class_for_tests.qml</file>
+        <file>9_Ninth_class_for_tests.qml</file>
+        <file>10_Tenth_class_for_tests.qml</file>
+        <file>11_Eleventh_class_for_tests.qml</file>
+        <file>LessonItemForlistLessonsView.qml</file>
+        <file>ClassRoomForTestItem.qml</file>
+    </qresource>
+</RCC>
