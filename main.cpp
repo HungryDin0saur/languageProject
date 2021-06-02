@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
-int testCommit = 1;
+
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

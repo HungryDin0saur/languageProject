@@ -8,7 +8,7 @@ ApplicationWindow {
     width: Screen.width
     height: Screen.height
     visible: true
-
+readonly property int testCommit: 50
     readonly property int heightOfAllTabs: Screen.height - tabFooterBar.height
     readonly property int widthOfAllTabs: mainApplicationWindow.width
 
