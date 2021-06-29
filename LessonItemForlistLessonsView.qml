@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.LocalStorage
-import QtWebSockets 1.1
+import QtWebSockets
 
 import "qrc:/"
 
@@ -33,7 +33,7 @@ ItemDelegate  {
 
 
 //********************************************************************************************************
-        WebSocket {aaaaa
+        WebSocket {
             id: socket
             url: "ws://localhost:3000"
             onTextMessageReceived: {
