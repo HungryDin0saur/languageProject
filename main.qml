@@ -3,6 +3,9 @@ import QtQuick.Controls
 import QtQuick.Window
 import QtQuick.LocalStorage
 
+
+
+
 ApplicationWindow {
     id: mainApplicationWindow
     width: Screen.width

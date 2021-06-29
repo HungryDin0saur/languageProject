@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.LocalStorage
+import QtWebSockets 1.1
 
 import "qrc:/"
 
@@ -29,6 +30,26 @@ ItemDelegate  {
             anchors.leftMargin: lessonRoomTitle.width / 10
             text: "Тема - " + (index + 1)
         }
+
+
+//********************************************************************************************************
+        WebSocket {
+            id: socket
+            url: "ws://localhost:3000"
+            onTextMessageReceived: {
+                messageBox.text = messageBox.text + "\nReceived message: " + message
+            }
+            onStatusChanged: if (socket.status == WebSocket.Error) {
+                                 console.log("Error: " + socket.errorString)
+                             } else if (socket.status == WebSocket.Open) {
+                                 socket.sendTextMessage("Hello World")
+                             } else if (socket.status == WebSocket.Closed) {
+                                 messageBox.text += "\nSocket closed"
+                             }
+            active: true
+        }
+
+//********************************************************************************************************
 
         onClicked: {
             if(trigHeight === true)

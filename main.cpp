@@ -4,6 +4,9 @@
 #include <QLocale>
 #include <QTranslator>
 
+#include "connecttosrvthroughwebsocket.h"
+
+
 int main(int argc, char *argv[])
 {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
@@ -30,6 +33,7 @@ int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
     engine.load(url);
+
 
 //qDebug() << "SQLLITE_Path: " << engine.offlineStoragePath(); //Найти месо сохранения БД SQLLITE
 
