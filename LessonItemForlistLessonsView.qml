@@ -33,7 +33,7 @@ ItemDelegate  {
 
 
 //********************************************************************************************************
-        WebSocket {
+        WebSocket {aaaaa
             id: socket
             url: "ws://localhost:3000"
             onTextMessageReceived: {
