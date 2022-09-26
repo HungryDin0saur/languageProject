@@ -1,6 +1,8 @@
 import QtQuick
 import QtQuick.Controls
 
+import "qrc:/interaction_to_websocket"
+
 Page {
     id: messagesPage
     width: mainApplicationWindow.widthOfAllTabs
@@ -115,5 +117,9 @@ Page {
                 messagesPageProfileDrawer.close()
             }
         }
+    }
+
+    WebSocket_connect_to_server {
+
     }
 }

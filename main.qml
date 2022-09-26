@@ -1,10 +1,10 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Dialogs
 import QtQuick.Window
 import QtQuick.LocalStorage
 
-
-
+import "qrc:/interaction_to_websocket"
 
 ApplicationWindow {
     id: mainApplicationWindow
@@ -26,6 +26,38 @@ ApplicationWindow {
     //    //Открытие или создание базы данных QSQLITE
     //   var sqlObj = LocalStorage.openDatabaseSync("ContentForStudyingDB", "1.0.0", "", "30000000");
     //}
+
+
+    DialogItem {
+        id: dimain
+        visible: false
+        title: "Ошибка подключения \n к серверу"
+    }
+
+    WebSocket_connect_to_server {
+        active: true
+
+        onNotRegistred: {
+            tabFooterBar.visible = false
+            mainPageSwipeView.visible = false
+            signPage.visible = true
+        }
+
+        onTextMessageReceived: {
+            console.log("\nReceived message: " + message + '\n');
+        }
+
+        onConnectionError: {
+            dimain.open()
+        }
+    }
+
+    RegisrationPage {
+        id: signPage
+        anchors.fill: mainApplicationWindow
+        visible: false
+        //z: 1 - Компонент распологается поверх остальных элементов
+    }
 
     SwipeView {
         id: mainPageSwipeView

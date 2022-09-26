@@ -5,11 +5,6 @@
     <name>PageForSwipeView_essays</name>
     <message>
         <location filename="PageForSwipeView_essays.qml" line="9"/>
-        <source>Page 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="PageForSwipeView_essays.qml" line="16"/>
         <source>Здесь будут храниться сочинения всех пользователей 
 
                    с комментариями</source>
@@ -19,13 +14,16 @@
 <context>
     <name>PageForSwipeView_lessons</name>
     <message>
-        <location filename="PageForSwipeView_lessons.qml" line="9"/>
-        <source>Page 1</source>
+        <location filename="PageForSwipeView_lessons.qml" line="10"/>
+        <source>Здесь будут уроки для иностранцев</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>RegisrationPage</name>
     <message>
-        <location filename="PageForSwipeView_lessons.qml" line="15"/>
-        <source>Здесь будут уроки для иностранцев</source>
+        <location filename="RegisrationPage.qml" line="7"/>
+        <source>REGISTRATION PAGE</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

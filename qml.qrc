@@ -11,6 +11,8 @@
         <file>PageForSwipeView_lessons.qml</file>
         <file>PageForSwipeView_essays.qml</file>
         <file>TESTTESTTEST.ui.qml</file>
+        <file>RegisrationPage.qml</file>
+        <file>DialogItem.qml</file>
     </qresource>
     <qresource prefix="/image_source">
         <file>essays.png</file>
@@ -46,5 +48,11 @@
         <file>11_Eleventh_class_for_tests.qml</file>
         <file>LessonItemForlistLessonsView.qml</file>
         <file>ClassRoomForTestItem.qml</file>
+    </qresource>
+    <qresource prefix="/interaction_to_websocket">
+        <file>WebSocket_connect_to_server.qml</file>
+    </qresource>
+    <qresource prefix="/message">
+        <file>Profile_window_for_message.qml</file>
     </qresource>
 </RCC>
